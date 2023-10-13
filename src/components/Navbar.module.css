@@ -1,0 +1,134 @@
+.navbarContainer{
+    background: var(--white);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1{
+    width: calc(100% - 48px);
+    height: 72px;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content2{
+    width: calc(100% - 48px);
+    height: 72px;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkContainer1{
+    width: 267px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: links;
+}
+
+.linkContainer2{
+    width: 267px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: links;
+}
+
+.link{
+    color: var(--black);
+    text-decoration: none;   
+}
+
+.link:hover{
+    color: var(--lightGray)
+}
+
+.button1{
+    width: 158px;
+    height: 40px;
+    grid-area: button;
+}
+
+.button2{
+    width: 158px;
+    height: 40px;
+    grid-area: button;
+}
+
+.menu{
+    display: none;
+}
+
+@media(max-width: 740px){
+    .menu{
+        height: 36px;
+        width: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        grid-area: icon;
+        justify-self: end;
+    }
+
+    .logo{
+        grid-area: logo;
+        justify-self: start;
+    }
+
+    .content1{
+        width: calc(100% - 48px);
+        height: 72px;
+        max-width: 1110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content2{
+        display: grid;
+        height: fit-content;
+        grid-template-columns: 1fr 130px 1fr;
+        grid-template-rows: 36px 100px 48px;
+        grid-row-gap: 32px;
+        margin: 18px 0 28px 0;
+        justify-items: center;
+        grid-template-areas: 
+        "logo logo icon"
+        " . links . "
+        " . button . "
+    }
+
+
+    .linkContainer1{
+        display: none;
+    }
+
+    .linkContainer2{
+        width: fit-content;
+        height: 100px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .button1{
+        display: none;
+    }
+
+}
+

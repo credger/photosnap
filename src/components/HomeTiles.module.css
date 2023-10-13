@@ -1,0 +1,147 @@
+.homeTilesContainer{
+    width: 100vw;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.tileRow{
+    height: 650px;
+    width: 100%;
+}
+
+.oddRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.evenRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.rectangle{
+    height: 650px;
+    width: calc(100% - 830px);
+    min-width: 495px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blackRectangle{
+    background: var(--black);
+    color: var(--white);
+}
+
+.whiteRectangle{
+    background: var(--white);
+    color: var(--black);
+}
+
+.image{
+    height: 650px;
+    width: calc(100% - 495px);
+    max-width: 830px;
+    object-fit: cover;
+}
+
+
+.imageBeautifulStories{
+    object-position: 30.5% 50%;
+}
+
+.imageDesignedForEveryone{
+    object-position: 40% 50%;
+}
+
+
+.textBox{
+    width: calc(100% - 64px);
+    max-width: 387px;
+    margin: 32px 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.rectangleParagraph{
+    margin: 21px 0 0 0;
+    opacity: 0.6;
+}
+
+.link{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 48px;
+}
+
+.linkText{
+    margin: 0 18px 0 0;
+}
+
+.heading{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 4.167px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 710px){
+    .oddRow{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .evenRow{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .image{
+        height: 294px;
+        width: 100%;
+        object-fit: cover;
+ 
+    }
+
+    .imageCreateAndShare{
+        object-position: 50% 35%;
+    }
+
+    .imageDesignedForEveryone{
+        object-position: 40% 5%;
+    }
+
+    .rectangle{
+        width: 100%;
+        height: 420px;
+    }
+
+    .heading{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+        letter-spacing: 3.333px;
+    }
+
+}
+
+@media(max-width: 340px){
+
+    .rectangle{
+        height: fit-content;
+    }
+}

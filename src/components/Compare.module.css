@@ -1,0 +1,142 @@
+.compare{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 96px 0 96px 0;
+    padding: 0 64px 0 64px;
+}
+
+.chart{
+    width: 100%;
+    max-width: 650px;
+}
+
+.row, .row1{
+    width: 100%;
+    max-width: 650px;
+    display: grid;
+    grid-template-columns: 52% 16% 16% 16%;
+    grid-template-rows: 64px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "col1 col2 col3 col4"
+}
+
+.feature{
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.gridColumn1{
+    grid-area: col1;
+    justify-self: start;
+}
+
+.gridColumn2{
+    grid-area: col2;
+}
+
+.gridColumn3{
+    grid-area: col3;
+}
+
+.gridColumn4{
+    grid-area: col4;
+}
+
+.heading{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 4.167px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+
+.lineGray{
+    width: 100%;
+    border-top: 1px solid var(--lightGray);
+    margin: 0;
+}
+
+.lineBlack{
+    width: 100%;
+    border-top: 1px solid var(--black);
+    margin: 0;
+}
+
+.mobileLabel{
+    display: none;
+
+}
+
+.chartElement{
+    display: flex;
+    flex-direction: column;
+}
+
+.row1Mobile{
+    display: none;
+}
+
+
+@media(max-width: 560px){
+    .compare{
+        margin: 64px 0 64px 0;
+        padding: 0 32px 0 32px;
+    }
+
+    .heading{
+        display: none;
+    }
+
+    .row{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 56px 60px;
+        justify-items: start;
+        grid-template-areas:
+        "col1 col1 col1"
+        "col2 col3 col4"
+    }
+
+    .row1{
+        display: none;
+    }
+
+    .row1Mobile{
+        display: block;
+        color: var(--black);
+        text-transform: uppercase;
+        margin: 0 0 24px 0;
+    }
+
+    .mobileLabel{
+        display: unset;
+        color: var(--black);
+        opacity: 0.5;
+        font-family: DM Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.667px;
+        margin-bottom: 8px;
+    }
+
+    .feature{
+        margin: 24px 0 16px 0;
+    }
+
+    .chartElement{
+        height: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 24px;
+    }
+
+
+}
