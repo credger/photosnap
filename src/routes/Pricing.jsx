@@ -1,6 +1,4 @@
 import React from 'react'
-import { Outlet, Link } from "react-router-dom";
-import styles from './Pricing.module.css'
 import heroImage from  '../assets/pricing/desktop/hero.jpg'
 import Navbar from '../components/Navbar';
 import FeaturesAndPricingHero from '../components/FeaturesAndPricingHero';
@@ -21,7 +19,7 @@ const Pricing = () => {
 
 
   return (
-    <div className={styles.pricingContainer}>
+    <div className='pageDimensions'>
       <Navbar />
       <FeaturesAndPricingHero image={image} heading={heading} text={text} objectPosition={objectPosition}/>
       <SubscriptionPlans />

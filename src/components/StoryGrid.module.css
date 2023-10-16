@@ -54,27 +54,12 @@
 }
 
 .dividerLine{
+    border-top: 1px solid var(--white);
+    border-bottom: none;
     width: 78%;
-    height: 1px;
     opacity: 0.25;
-    background: var(--white);
     margin: 0 0 20px 0;
 }
-
-.linkText{
-    margin-right: 18px;
-}
-
-.link{
-    width: 280px;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    text-transform: uppercase;
-}
-
 
 @media(max-width: 900px){
     .storiesContainer{

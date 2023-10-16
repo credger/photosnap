@@ -65,20 +65,6 @@
     justify-self: end;
 }
 
-.link{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-.linkText{
-    margin: 0 18px 0 0;
-}
-
 .copyRightText{
     color: var(--white);
     opacity: 0.6;

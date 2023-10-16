@@ -26,32 +26,6 @@
     z-index: 1;
 }
 
-.link{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-.linkText{
-    margin: 0 18px 0 0;
-}
-
-.textOpacity{
-    opacity: 0.6;
-}
-
-.marginBottom24px{
-    margin-bottom: 24px;
-}
-
-.marginBottom16px{
-    margin-bottom: 16px;
-}
-
 .heading{
     font-size: 40px;
     font-style: normal;

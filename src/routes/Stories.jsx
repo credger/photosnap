@@ -1,6 +1,4 @@
 import React from 'react'
-import { Outlet, Link } from "react-router-dom";
-import styles from './Stories.module.css'
 import Navbar from '../components/Navbar';
 import StoriesHero from '../components/StoriesHero';
 import { stories } from '../gridData';
@@ -9,7 +7,7 @@ import Footer from '../components/Footer';
 
 const Stories = () => {
   return (
-    <div className={styles.parentContainer}>
+    <div className='pageDimensions'>
       <Navbar />
       <StoriesHero />
       <StoryGrid stories={stories} />

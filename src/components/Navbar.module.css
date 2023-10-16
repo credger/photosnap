@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.content1{
+.content1, .content2{
     width: calc(100% - 48px);
     height: 72px;
     max-width: 1110px;
@@ -18,26 +18,7 @@
     align-items: center;
 }
 
-.content2{
-    width: calc(100% - 48px);
-    height: 72px;
-    max-width: 1110px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.linkContainer1{
-    width: 267px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    grid-area: links;
-}
-
-.linkContainer2{
+.linkContainer1, .linkContainer2{
     width: 267px;
     display: flex;
     flex-direction: row;
@@ -55,16 +36,19 @@
     color: var(--lightGray)
 }
 
-.button1{
+/* .button1, .button2{
     width: 158px;
     height: 40px;
+    grid-area: button;
+} */
+
+.getInvite1, .getInvite2{
     grid-area: button;
 }
 
-.button2{
+.button{
     width: 158px;
     height: 40px;
-    grid-area: button;
 }
 
 .menu{
@@ -126,7 +110,11 @@
         align-items: center;
     }
 
-    .button1{
+    /* .button1{
+        display: none;
+    } */
+
+    .getInvite1{
         display: none;
     }
 

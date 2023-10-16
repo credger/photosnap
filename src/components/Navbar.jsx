@@ -1,6 +1,6 @@
 import styles from './Navbar.module.css'
-import logoBlackText from '../assets/logo-black-text.svg'
-import { Outlet, Link } from "react-router-dom";
+import logoBlackText from '../assets/shared/desktop/logo-black-text.svg'
+import { Link } from "react-router-dom";
 import menu from '../assets/shared/mobile/menu.svg'
 import close from '../assets/shared/mobile/close.svg'
 import React from 'react'
@@ -15,7 +15,7 @@ const Navbar = () => {
     const [classNames, setClassNames] = useState(
         {linkContainer: styles.linkContainer1,
          content: styles.content1,
-         button: styles.button1})
+         getInvite: styles.getInvite1})
 
     const handleClick = () => {
         updateIcon()
@@ -36,13 +36,13 @@ const Navbar = () => {
             setClassNames({
                 linkContainer: styles.linkContainer1,
                 content: styles.content1,
-                button: styles.button1
+                getInvite: styles.getInvite1
             })
         } else{
             setClassNames({
                 linkContainer: styles.linkContainer2,
                 content: styles.content2,
-                button: styles.button2
+                getInvite: styles.getInvite2
             })
 
         }
@@ -66,15 +66,14 @@ const Navbar = () => {
         <Link to='../' className={styles.logo}>
             <img src={logoBlackText} alt='triangle-path' width='170' height='16'/>
         </Link>
-
             <div className={classNames.linkContainer}>
                 <Link to='../stories' className={`h4 ${styles.link}`}>STORIES</Link>
                 <Link to='../features'className={`h4 ${styles.link}`}>FEATURES</Link>
                 <Link to='../pricing' className={`h4 ${styles.link}`}>PRICING</Link>
             </div>
-
-            <button className={`h4 button1 ${classNames.button}`}>GET AN INVITE</button>
-
+            <Link to='../comingsoon' className={classNames.getInvite} >
+                <button className={`h4 button1 ${styles.button}`}>GET AN INVITE</button>
+            </Link>
             <div className={styles.menu} onClick={handleClick}>
                 <img src={icon.image} alt='menu' width={icon.width} height={icon.height}/>
             </div> 

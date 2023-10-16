@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import { Outlet, Link } from "react-router-dom";
-import styles from './Home.module.css'
 import Navbar from '../components/Navbar';
 import HomeTiles from '../components/HomeTiles';
 import { homeStories, homeFeatures } from '../gridData';
@@ -12,7 +9,7 @@ import Footer from '../components/Footer';
 function Home() {
 
   return (
-    <div className={styles.parentContainer}>
+    <div className='pageDimensions'>
       <Navbar />
       <HomeTiles />
       <StoryGrid stories={homeStories} />

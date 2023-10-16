@@ -1,12 +1,10 @@
 .homeTilesContainer{
-    width: 100vw;
-    max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
-
 
 .tileRow{
     height: 650px;
@@ -58,7 +56,6 @@
     object-position: 40% 50%;
 }
 
-
 .textBox{
     width: calc(100% - 64px);
     max-width: 387px;
@@ -67,26 +64,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-}
-
-.rectangleParagraph{
-    margin: 21px 0 0 0;
-    opacity: 0.6;
-}
-
-.link{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    text-transform: uppercase;
-    margin-top: 48px;
-}
-
-.linkText{
-    margin: 0 18px 0 0;
 }
 
 .heading{
@@ -126,6 +103,7 @@
 
     .rectangle{
         width: 100%;
+        min-width: unset;
         height: 420px;
     }
 

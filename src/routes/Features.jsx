@@ -1,6 +1,4 @@
 import React from 'react'
-import { Outlet, Link } from "react-router-dom";
-import styles from './Features.module.css'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FeatureGrid from '../components/FeatureGrid';
@@ -19,7 +17,7 @@ const Features = () => {
 
 
   return (
-    <div className={styles.featuresContainer}>
+    <div className='pageDimensions'>
       <Navbar />
       <FeaturesAndPricingHero image={image} heading={heading} text={text} objectPosition={objectPosition} />
       <FeatureGrid features={features}/>

@@ -19,7 +19,7 @@
     width: 100%;
     max-width: 350px;
     height: fit-content;
-    background-color: var(--lightGray);
+    background-color: #F5F5F5;
     color: var(--black);
     display: flex;
     flex-direction: column;
@@ -82,8 +82,5 @@
     .grayPlan{
         max-width: 460px;
     }
-
-
-
 }
 

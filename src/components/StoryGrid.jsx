@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './StoryGrid.module.css'
-import { Outlet, Link } from "react-router-dom";
-import rightArrowWhite from '../assets/right-arrow-white.svg'
+import { Link } from "react-router-dom";
+import rightArrowWhite from '../assets/shared/desktop/right-arrow-white.svg'
 
 const StoryGrid= (props) => {
   
@@ -15,9 +15,9 @@ const StoryGrid= (props) => {
         <p className={`p2 ${styles.date}`}>{story.date}</p>
         <h3 className={`h3 ${styles.title}`}>{story.title}</h3>
         <p className={`p2 ${styles.author}`}>by {story.author}</p>
-        <div className={styles.dividerLine}></div>
-        <Link className={`h4 link2 ${styles.link}`}>
-          <p className={styles.linkText}>Read Story</p>
+        <hr className={styles.dividerLine} />
+        <Link to='../comingsoon' className={`h4 link2 linkWithArrow`}>
+          <p className='marginRight18px'>Read Story</p>
           <img src={rightArrowWhite} alt='right-arrow' width='42' height='14' />
         </Link>
       </div>

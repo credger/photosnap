@@ -10,6 +10,7 @@ import ErrorPage from './ErrorPage';
 import Features from './routes/Features';
 import Pricing from './routes/Pricing'
 import Stories from './routes/Stories'
+import ComingSoon from './routes/ComingSoon';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,12 @@ const router = createBrowserRouter([
     path: "stories",
     element: <Stories />,
   },
+
+  {
+    path: "comingsoon",
+    element: <ComingSoon />,
+  }
+  
   
 
 ]);
