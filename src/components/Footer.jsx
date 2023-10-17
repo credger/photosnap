@@ -14,7 +14,9 @@ const Footer = () => {
     <div className={styles.footerContainer}>
         <div className={styles.content}>
             <div className={styles.logoAndIcons}>
+            <Link to='../photosnap' className={styles.logo}>
                 <img src={logoWhiteText} width='170' height='16' alt='logo-white-text'/>
+            </Link>
                 <div className={styles.icons}>
                     <Link to='../photosnap/comingsoon'>
                         <img src={facebook} alt='logo-white-text' width='512' height='512' className={styles.icon}/>

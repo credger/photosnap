@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './SubscriptionPlans.module.css'
+import { Link } from "react-router-dom";
 
 const SubscriptionPlans = () => {
   return (
@@ -12,7 +13,9 @@ const SubscriptionPlans = () => {
                 </p>
                 <p className='h1'>$19.00</p>
                 <p className={`p opacity60pct ${styles.paragraph}`}>per month</p>
-                <button className={`button1 h4 ${styles.button}`}>Pick Plan</button>
+                <Link to='../photosnap/comingsoon' className={styles.planLink} >
+                    <button className={`button1 h4 ${styles.button}`}>Pick Plan</button>
+                </Link>
             </div>
             <div className={styles.blackPlan}>
                 <h2 className={`h2 ${styles.headingPro}`}>Pro</h2>
@@ -21,7 +24,10 @@ const SubscriptionPlans = () => {
                 </p>
                 <p className='h1'>$39.00</p>
                 <p className={`p opacity60pct ${styles.paragraph}`}>per month</p>
-                <button className={`button2 h4 ${styles.button}`}>Pick Plan</button>
+                <Link to='../photosnap/comingsoon' className={styles.planLink} >
+                    <button className={`button2 h4 ${styles.button}`}>Pick Plan</button>
+                </Link>
+                
             </div>
 
             <div className={styles.grayPlan}>
@@ -31,7 +37,10 @@ const SubscriptionPlans = () => {
                 </p>
                 <p className='h1'>$99.00</p>
                 <p className={`p opacity60pct ${styles.paragraph}`}>per month</p>
-                <button className={`button1 h4 ${styles.button}`}>Pick Plan</button>
+                <Link to='../photosnap/comingsoon' className={styles.planLink} >
+                    <button className={`button1 h4 ${styles.button}`}>Pick Plan</button>
+                </Link>
+                
             </div>
         </div>
     </div>
