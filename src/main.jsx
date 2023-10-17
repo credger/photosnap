@@ -14,28 +14,28 @@ import ComingSoon from './routes/ComingSoon';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/photosnap/",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
 
   {
-    path: "features",
+    path: "/photosnap/features",
     element: <Features />,
   },
 
   {
-    path: "pricing",
+    path: "/photosnap/pricing",
     element: <Pricing />,
   },
 
   {
-    path: "stories",
+    path: "/photosnap/stories",
     element: <Stories />,
   },
 
   {
-    path: "comingsoon",
+    path: "/photosnap/comingsoon",
     element: <ComingSoon />,
   }
   

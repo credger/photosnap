@@ -18,7 +18,7 @@ const HomeTiles = () => {
                         Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, 
                         tell stories and connect with others.
                     </p>
-                    <Link to='../comingsoon' className='h4 link2 linkWithArrow marginTop48px'>
+                    <Link to='../photosnap/comingsoon' className='h4 link2 linkWithArrow marginTop48px'>
                         <p className='marginRight18px'>Get an invite</p>
                         <img src={rightArrowWhite} alt='right-arrow' width='42' height='14' />
                     </Link>
@@ -35,7 +35,7 @@ const HomeTiles = () => {
                             We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and 
                             media from other networks. Then share your story with everyone.
                         </p>
-                        <Link to='../stories' className='h4 link1 linkWithArrow marginTop48px'>
+                        <Link to='../photosnap/stories' className='h4 link1 linkWithArrow marginTop48px'>
                             <p className='marginRight18px'>View the Stories</p>
                             <img src={rightArrowBlack} alt='right-arrow' width='42' height='14' />
                         </Link>
@@ -51,7 +51,7 @@ const HomeTiles = () => {
                         Our tool is designed for photographers of all levels, brands, businesses 
                         you name it.
                     </p>
-                    <Link to='../stories' className='h4 link1 linkWithArrow marginTop48px'>
+                    <Link to='../photosnap/stories' className='h4 link1 linkWithArrow marginTop48px'>
                         <p className='marginRight18px'>View the Stories</p>
                         <img src={rightArrowBlack} alt='right-arrow' width='42' height='14' />
                     </Link>

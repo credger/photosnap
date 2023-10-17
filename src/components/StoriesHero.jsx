@@ -17,7 +17,7 @@ const StoriesHero = () => {
             is popularly called "mountains," especially in eastern Kentucky and West Virginia,
             and while the ridges are not high, the terrain is extremely rugged.
             </p>
-            <Link to='../comingsoon' className='h4 link2 linkWithArrow'>
+            <Link to='../photosnap/comingsoon' className='h4 link2 linkWithArrow'>
                 <p className='marginRight18px'>Read the story</p>
                 <img src={rightArrowWhite} alt='right-arrow' width='42' height='14' />
             </Link>

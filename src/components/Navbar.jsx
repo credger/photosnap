@@ -63,15 +63,15 @@ const Navbar = () => {
   return (
     <div className={styles.navbarContainer}>
         <div className={classNames.content}>
-        <Link to='../' className={styles.logo}>
+        <Link to='../photosnap' className={styles.logo}>
             <img src={logoBlackText} alt='triangle-path' width='170' height='16'/>
         </Link>
             <div className={classNames.linkContainer}>
-                <Link to='../stories' className={`h4 ${styles.link}`}>STORIES</Link>
-                <Link to='../features'className={`h4 ${styles.link}`}>FEATURES</Link>
-                <Link to='../pricing' className={`h4 ${styles.link}`}>PRICING</Link>
+                <Link to='../photosnap/stories' className={`h4 ${styles.link}`}>STORIES</Link>
+                <Link to='../photosnap/features'className={`h4 ${styles.link}`}>FEATURES</Link>
+                <Link to='../photosnap/pricing' className={`h4 ${styles.link}`}>PRICING</Link>
             </div>
-            <Link to='../comingsoon' className={classNames.getInvite} >
+            <Link to='../photosnap/comingsoon' className={classNames.getInvite} >
                 <button className={`h4 button1 ${styles.button}`}>GET AN INVITE</button>
             </Link>
             <div className={styles.menu} onClick={handleClick}>
