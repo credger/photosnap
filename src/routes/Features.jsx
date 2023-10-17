@@ -6,6 +6,7 @@ import { features } from '../gridData';
 import FeaturesAndPricingHero from '../components/FeaturesAndPricingHero';
 import heroImage from '../assets/features/desktop/hero.jpg'
 import BetaBanner from '../components/BetaBanner';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Features = () => {
 
@@ -18,6 +19,7 @@ const Features = () => {
 
   return (
     <div className='pageDimensions'>
+      <ScrollToTop />
       <Navbar />
       <FeaturesAndPricingHero image={image} heading={heading} text={text} objectPosition={objectPosition} />
       <FeatureGrid features={features}/>

@@ -4,13 +4,14 @@ import Home from './routes/Home'
 import './index.css'
 import {
   createBrowserRouter,
-  RouterProvider,
+  RouterProvider
 } from "react-router-dom";
 import ErrorPage from './ErrorPage';
 import Features from './routes/Features';
 import Pricing from './routes/Pricing'
 import Stories from './routes/Stories'
 import ComingSoon from './routes/ComingSoon';
+
 
 const router = createBrowserRouter([
   {
@@ -38,9 +39,6 @@ const router = createBrowserRouter([
     path: "/photosnap/comingsoon",
     element: <ComingSoon />,
   }
-  
-  
-
 ]);
 
 
@@ -49,3 +47,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+
+

@@ -6,6 +6,7 @@ import BetaBanner from '../components/BetaBanner';
 import Footer from '../components/Footer';
 import Compare from '../components/Compare';
 import SubscriptionPlans from '../components/SubscriptionPlans';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Pricing = () => {
 
@@ -20,6 +21,7 @@ const Pricing = () => {
 
   return (
     <div className='pageDimensions'>
+      <ScrollToTop />
       <Navbar />
       <FeaturesAndPricingHero image={image} heading={heading} text={text} objectPosition={objectPosition}/>
       <SubscriptionPlans />
