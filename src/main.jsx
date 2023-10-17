@@ -39,8 +39,7 @@ const router = createBrowserRouter([
     path: "/photosnap/comingsoon",
     element: <ComingSoon />,
   }
-  ],{basename: "/photosnap/"}
-);
+  ]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
