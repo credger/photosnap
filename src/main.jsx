@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Home from './routes/Home'
 import './index.css'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider
 } from "react-router-dom";
 import ErrorPage from './ErrorPage';
@@ -13,30 +13,30 @@ import Stories from './routes/Stories'
 import ComingSoon from './routes/ComingSoon';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/photosnap/",
+    path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
 
   {
-    path: "/photosnap/features",
+    path: "features",
     element: <Features />,
   },
 
   {
-    path: "/photosnap/pricing",
+    path: "pricing",
     element: <Pricing />,
   },
 
   {
-    path: "/photosnap/stories",
+    path: "stories",
     element: <Stories />,
   },
 
   {
-    path: "/photosnap/comingsoon",
+    path: "comingsoon",
     element: <ComingSoon />,
   }
   ]);

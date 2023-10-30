@@ -13,7 +13,7 @@ const SubscriptionPlans = () => {
                 </p>
                 <p className='h1'>$19.00</p>
                 <p className={`p opacity60pct ${styles.paragraph}`}>per month</p>
-                <Link to='../photosnap/comingsoon' className={styles.planLink} >
+                <Link to='../comingsoon' className={styles.planLink} >
                     <button className={`button1 h4 ${styles.button}`}>Pick Plan</button>
                 </Link>
             </div>
@@ -24,7 +24,7 @@ const SubscriptionPlans = () => {
                 </p>
                 <p className='h1'>$39.00</p>
                 <p className={`p opacity60pct ${styles.paragraph}`}>per month</p>
-                <Link to='../photosnap/comingsoon' className={styles.planLink} >
+                <Link to='../comingsoon' className={styles.planLink} >
                     <button className={`button2 h4 ${styles.button}`}>Pick Plan</button>
                 </Link>
                 
@@ -37,7 +37,7 @@ const SubscriptionPlans = () => {
                 </p>
                 <p className='h1'>$99.00</p>
                 <p className={`p opacity60pct ${styles.paragraph}`}>per month</p>
-                <Link to='../photosnap/comingsoon' className={styles.planLink} >
+                <Link to='../comingsoon' className={styles.planLink} >
                     <button className={`button1 h4 ${styles.button}`}>Pick Plan</button>
                 </Link>
                 
