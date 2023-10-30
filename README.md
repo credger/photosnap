@@ -1,7 +1,7 @@
 Photosnap
 
-Design purchased from https://www.frontendmentor.io/
-
+Design by https://www.frontendmentor.io/
+Code by Clyde Redger
 
 
 
